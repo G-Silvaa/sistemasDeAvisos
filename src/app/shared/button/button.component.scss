@@ -1,0 +1,24 @@
+button {
+    display: flex;
+    height: 29.999px;
+    padding: 10.666px 10.971px;
+    justify-content: center;
+    align-items: center;
+    gap: 7.314px;
+    border: none;
+
+    border-radius: 4px;
+    background: var(--primary-color, #2f9e41);
+
+    font-family: Inter;
+    font-size: 10.666px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 11.999px;
+    color: white;
+    cursor: pointer;
+    img{
+      margin-bottom: 4px;
+      
+    }
+  }
