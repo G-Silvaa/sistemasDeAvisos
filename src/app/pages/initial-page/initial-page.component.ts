@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from 'src/app/shared/modal/modal.component';
+import { ModalModule } from 'src/app/shared/modal/modal.module';
+
+
 
 
 
@@ -13,11 +16,15 @@ import { ModalComponent } from 'src/app/shared/modal/modal.component';
 export class InitialPageComponent {
   constructor(public dialog: MatDialog) {}
 
+  
+
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(ModalComponent, {
-      width: '500px',
+      
       enterAnimationDuration,
       exitAnimationDuration,
     });
   }
 }
+  
+
