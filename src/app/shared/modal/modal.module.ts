@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from './button.component';
+import { ModalComponent } from './modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 
 @NgModule({
   declarations: [
-    ButtonComponent
+    ModalComponent,
+    
+    
   ],
   imports: [
     CommonModule,
     MatDialogModule
   ],
   exports: [
-    ButtonComponent
+    ModalComponent
   ]
 })
-export class ButtonModule { }
+export class ModalModule { }

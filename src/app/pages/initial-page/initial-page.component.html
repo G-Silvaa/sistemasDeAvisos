@@ -9,17 +9,17 @@
 
         </div>
         
-        <app-button></app-button>
+        <app-button (click)="openDialog('0ms', '0ms')"></app-button>
         </header>
         
         <div class="content-cards">
 
-            <app-cards></app-cards>
-            <app-cards></app-cards>
-            <app-cards></app-cards>
-            <app-cards></app-cards>
-            <app-cards></app-cards>
-            <app-cards></app-cards>
+            <app-cards [cardTitle]="'Avisos 1'" ngClass="aviso1"></app-cards>
+            <app-cards [cardTitle]="'Avisos 2'" ngClass="aviso2"></app-cards>
+            <app-cards [cardTitle]="'Avisos 3'" ngClass="aviso3"></app-cards>
+            <app-cards [cardTitle]="'Avisos 4'" ngClass="aviso4"></app-cards>
+            <app-cards [cardTitle]="'Avisos 5'" ngClass="aviso5"></app-cards>
+            <app-cards [cardTitle]="'Avisos 6'" ngClass="aviso6"></app-cards>
     </div>
 
 
