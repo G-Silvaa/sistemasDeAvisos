@@ -30,7 +30,7 @@
   }
 
   .content {
-    border: 1px solid red;
+   
     height: 400px;
     display: flex;
 
@@ -87,14 +87,24 @@
       }
       .descrição{
         background: #F3F3F3;
-       width: 498px;
-       height: 254px;
+       width: 434px;
+       height: 215px;
        margin-top: 20px;
        resize: none;
        outline: none;
        border: none;
        
         padding: 30px;
+      }
+
+      p{
+        color: #303030;
+margin-left: 440px;
+font-family: Roboto;
+font-size: 14.244px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
       }
     }
   }

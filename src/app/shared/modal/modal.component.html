@@ -18,7 +18,8 @@
     <h3>Conteúdo do Aviso</h3>
     <input placeholder="Avisos" type="text">
     <!-- <input class="descrição" placeholder="Descrição" type="text"> -->
-    <textarea class="descrição" [(ngModel)]="textoArea"></textarea>
+    <textarea class="descrição" [(ngModel)]="textoArea" (input)="contacaracterer($event)"></textarea>
+    <p>{{ limitCaractere - textoArea.length }}/160</p>
     
   </div>
 </div>

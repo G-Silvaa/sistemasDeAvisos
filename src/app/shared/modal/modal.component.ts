@@ -11,11 +11,12 @@ export class ModalComponent {
 
   constructor(public dialogRef: MatDialogRef<ModalComponent>) {}
 textoArea: string = ''
-limitCaractere: number = 100
+limitCaractere: number = 160
 
-contacaracterer(){
+contacaracterer(event: any){
   if(this.textoArea.length > this.limitCaractere){
-    this.textoArea = this.textoArea.slice(0, this.limitCaractere)
+    event.target.value = event.target.value.slice(0, this.limitCaractere)
+    
   }
 }
   
