@@ -5,16 +5,26 @@
     <img src="../../../assets/lapis.svg" alt="">
     <h1 mat-dialog-title>Atualizar Aviso 6</h1>
   </div>
-  <img src="../../../assets/close.svg" alt="">
+  <img class="close" src="../../../assets/close.svg" alt="">
 </header>
 
 <div class="content">
-  <div class="pre-visu"></div>
-  <div class="conteudo-aviso"></div>
+  
+  <div class="pre-visu">
+    <h3>Pré-visualização</h3>
+    <app-cards [cardTitle]="'Avisos 1'" ngClass="aviso1"></app-cards>
+  </div>
+  <div class="conteudo-aviso">
+    <h3>Conteúdo do Aviso</h3>
+    <input placeholder="Avisos" type="text">
+    <!-- <input class="descrição" placeholder="Descrição" type="text"> -->
+    <textarea class="descrição" [(ngModel)]="textoArea"></textarea>
+    
+  </div>
 </div>
 
 <div >
-  <button class="cancel" >Cancelar</button>
-  <button class="save" >Salvar</button>
+  <app-button [buttonTitle]="'Cancelar'"></app-button>
+  <app-button [buttonTitle]="'Salvar'"></app-button>
 </div>
 </div>
