@@ -5,6 +5,7 @@ import { ButtonComponent } from '../button/button.component';
 import { ButtonModule } from '../button/button.module';
 import { CardsModule } from '../cards/cards/cards.module';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     ButtonModule,
     CardsModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
   ],
   exports: [
     ModalComponent

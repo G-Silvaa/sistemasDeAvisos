@@ -1,9 +1,9 @@
-<div class="container">
+<!-- <div class="container">
 
   <header>
   <div class="logo">
     <img src="../../../assets/lapis.svg" alt="">
-    <h1 mat-dialog-title>Atualizar Aviso 6</h1>
+    <h1 mat-dialog-title>Atualizar {{ data.title }}</h1>
   </div>
   <img class="close" src="../../../assets/close.svg" alt="">
 </header>
@@ -17,7 +17,6 @@
   <div class="conteudo-aviso">
     <h3>Conteúdo do Aviso</h3>
     <input placeholder="Avisos" type="text">
-    <!-- <input class="descrição" placeholder="Descrição" type="text"> -->
     <textarea class="descrição" [(ngModel)]="textoArea" (input)="contacaracterer($event)"></textarea>
     <p>{{ limitCaractere - textoArea.length }}/160</p>
     
@@ -28,4 +27,14 @@
   <app-button [buttonTitle]="'Cancelar'"></app-button>
   <app-button [buttonTitle]="'Salvar'"></app-button>
 </div>
-</div>
+</div> -->
+
+<h2 mat-dialog-title>Install Angular</h2>
+<mat-dialog-content class="mat-typography">
+  <app-cards [cardTitle]="data.title" ngClass="aviso1"></app-cards>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
+

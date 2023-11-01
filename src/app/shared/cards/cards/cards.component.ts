@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from '../../modal/modal.component';
 
 @Component({
   selector: 'app-cards',
@@ -7,4 +9,17 @@ import { Component, Input } from '@angular/core';
 })
 export class CardsComponent {
   @Input() cardTitle: string = '';
+
+  constructor(public dialog: MatDialog) {}
+
+  
+
+  openDialog(): void {
+    this.dialog.open(ModalComponent, {
+      data: {
+        title: this.cardTitle 
+      }
+     
+    });
+  }
 }
