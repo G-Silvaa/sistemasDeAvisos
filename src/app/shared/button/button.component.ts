@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 
@@ -8,5 +8,5 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
- 
+  @Input() buttonTitle: string = '';
 }

@@ -10,6 +10,15 @@ import { ModalModule } from './modal.module';
 export class ModalComponent {
 
   constructor(public dialogRef: MatDialogRef<ModalComponent>) {}
+textoArea: string = ''
+limitCaractere: number = 100
+
+contacaracterer(){
+  if(this.textoArea.length > this.limitCaractere){
+    this.textoArea = this.textoArea.slice(0, this.limitCaractere)
+  }
+}
+  
 }
 
 

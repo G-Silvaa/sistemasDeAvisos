@@ -11,7 +11,10 @@
     align-items: center;
     justify-content: space-between;
 
-     .logo {
+    .close {
+      cursor: pointer;
+    }
+    .logo {
       display: flex;
       gap: 8px;
       h1 {
@@ -29,20 +32,70 @@
   .content {
     border: 1px solid red;
     height: 400px;
-  }
-
-  button {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 32.811px;
-    padding: 11.666px 17.499px;
-    gap: 5.833px;
-    outline: none;
-    cursor: pointer;
-    
-    .cancel {
-     color: red;
+
+    .pre-visu {
+      width: 50%;
+      height: 100%;
+      
+     
+      .aviso1 {
+
+        background: linear-gradient(90deg, #400e0e 0%, #812121 60.01%);
+      }
+
+      h3 {
+        color: #303030;
+
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 13.124px;
+      }
+    }
+
+    .conteudo-aviso {
+      width: 50%;
+      height: 100%;
+      
+
+      h3 {
+        color: #303030;
+
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 13.124px;
+      }
+      input{
+        width: 475px;
+        height: 48px;
+        display: flex;
+        padding: 6.829px 10.244px 6.829px 11.951px;
+        align-items: center;
+        gap: 11.951px;
+        align-self: stretch;
+        outline: none;
+        margin-top: 30px;
+        border-radius: 1.707px;
+        background: #F3F3F3;
+        border: none;
+
+        
+      }
+      .descrição{
+        background: #F3F3F3;
+       width: 498px;
+       height: 254px;
+       margin-top: 20px;
+       resize: none;
+       outline: none;
+       border: none;
+       
+        padding: 30px;
+      }
     }
   }
 }
