@@ -2,8 +2,7 @@
 
  
   .cards {
-    position: relative;
-    background-color: red;
+    position: relative; 
     display: flex;
     height: 180px;
     min-width: 307.627px;
@@ -11,13 +10,24 @@
     flex-direction: column;
     align-items: flex-start;
     
+    img{
+      position: absolute;
+      right: 0;
+      margin-right: 10px;
+    }
     .cards-content{
       padding: 13.692px 9.114px 5px 9.114px;
+    }
+
+    .name{
+      display: flex;
+      justify-content: space-between;
     }
   
     h3 {
       color: #fff;
-  
+      display: flex;
+      flex-wrap: wrap;
       font-family: Roboto;
       font-size: 18.806px;
       font-style: normal;

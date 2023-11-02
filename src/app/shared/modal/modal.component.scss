@@ -30,18 +30,14 @@
   }
 
   .content {
-   
     height: 400px;
     display: flex;
 
     .pre-visu {
       width: 50%;
       height: 100%;
-      
-     
-      .aviso1 {
 
-        background: linear-gradient(90deg, #400e0e 0%, #812121 60.01%);
+      .aviso1 {
       }
 
       h3 {
@@ -58,7 +54,6 @@
     .conteudo-aviso {
       width: 50%;
       height: 100%;
-      
 
       h3 {
         color: #303030;
@@ -69,7 +64,7 @@
         font-weight: 600;
         line-height: 13.124px;
       }
-      input{
+      input {
         width: 475px;
         height: 48px;
         display: flex;
@@ -80,31 +75,62 @@
         outline: none;
         margin-top: 30px;
         border-radius: 1.707px;
-        background: #F3F3F3;
+        background: #f3f3f3;
+        border: none;
+      }
+      .descrição {
+        background: #f3f3f3;
+        width: 434px;
+        height: 200px;
+        margin-top: 20px;
+        resize: none;
+        outline: none;
         border: none;
 
-        
-      }
-      .descrição{
-        background: #F3F3F3;
-       width: 434px;
-       height: 215px;
-       margin-top: 20px;
-       resize: none;
-       outline: none;
-       border: none;
-       
         padding: 30px;
       }
 
-      p{
+      p {
         color: #303030;
-margin-left: 440px;
-font-family: Roboto;
-font-size: 14.244px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+        margin-left: 440px;
+        font-family: Roboto;
+        font-size: 14.244px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .content-button {
+    display: flex;
+    gap: 10px;
+    margin-left: 830px;
+
+    .cancel {
+      border-radius: 4.375px;
+      border: 0.729px solid var(--cancel, #cd191e);
+      background: var(--default-white, #fff);
+      color: red;
+      height: 34.811px;
+      width: 80.038px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .save {
+      border-radius: 4.375px;
+      background: var(--primary-color, #2f9e41);
+      color: white;
+      width: 80.038px;
+      height: 34.811px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg{
+        display: none;
       }
     }
   }

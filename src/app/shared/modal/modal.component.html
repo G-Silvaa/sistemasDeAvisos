@@ -1,40 +1,36 @@
-<!-- <div class="container">
+
+ <div class="container">
 
   <header>
   <div class="logo">
     <img src="../../../assets/lapis.svg" alt="">
     <h1 mat-dialog-title>Atualizar {{ data.title }}</h1>
   </div>
-  <img class="close" src="../../../assets/close.svg" alt="">
+  <img (click)="closeDialog()" class="close" src="../../../assets/close.svg" alt="">
 </header>
 
 <div class="content">
   
   <div class="pre-visu">
     <h3>Pré-visualização</h3>
-    <app-cards [cardTitle]="'Avisos 1'" ngClass="aviso1"></app-cards>
+    
+    
   </div>
+  
   <div class="conteudo-aviso">
     <h3>Conteúdo do Aviso</h3>
-    <input placeholder="Avisos" type="text">
-    <textarea class="descrição" [(ngModel)]="textoArea" (input)="contacaracterer($event)"></textarea>
+    <input placeholder="Avisos" type="text" [(ngModel)]="tituloInput">
+    <textarea class="descrição" [(ngModel)]="textoArea" (input)="contacaracterer($event)" [(ngModel)]="descricaoInput"></textarea>
     <p>{{ limitCaractere - textoArea.length }}/160</p>
     
   </div>
 </div>
 
-<div >
-  <app-button [buttonTitle]="'Cancelar'"></app-button>
-  <app-button [buttonTitle]="'Salvar'"></app-button>
+<div class="content-button" >
+  <app-button (click)="closeDialog()" [buttonTitle]="'Cancelar'" class="cancel"></app-button>
+      <app-button   (click)="salvar()" [buttonTitle]="'Salvar'" class="save"></app-button>
+      
 </div>
-</div> -->
+</div> 
 
-<h2 mat-dialog-title>Install Angular</h2>
-<mat-dialog-content class="mat-typography">
-  <app-cards [cardTitle]="data.title" ngClass="aviso1"></app-cards>
-</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
-</mat-dialog-actions>
 

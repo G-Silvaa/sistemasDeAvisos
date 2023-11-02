@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Inject, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../../modal/modal.component';
 
@@ -9,17 +9,28 @@ import { ModalComponent } from '../../modal/modal.component';
 })
 export class CardsComponent {
   @Input() cardTitle: string = '';
-
-  constructor(public dialog: MatDialog) {}
-
+  @Input() tituloInput:string = 'Adicione um Titulo';
+  @Input() descricaoInput: string = 'Adicione uma descrição';
   
+  constructor(public dialog: MatDialog) {
+    console.log(this.descricaoInput)
+  }
+
 
   openDialog(): void {
-    this.dialog.open(ModalComponent, {
+    const dialogRef = this.dialog.open(ModalComponent, {
       data: {
-        title: this.cardTitle 
+        title: this.cardTitle, 
+        tituloInput: this.tituloInput, 
+        descricaoInput: this.descricaoInput 
       }
-     
+    });
+
+    dialogRef.afterClosed().subscribe((result: any) => {
+      if (result) {
+        this.tituloInput = result.tituloInput;
+        this.descricaoInput = result.descricaoInput;
+      }
     });
   }
 }

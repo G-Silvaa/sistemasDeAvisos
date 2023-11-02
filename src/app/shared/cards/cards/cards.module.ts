@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardsComponent } from './cards.component';
 import { ButtonModule } from '../../button/button.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -9,7 +10,8 @@ import { ButtonModule } from '../../button/button.module';
   declarations: [CardsComponent],
   imports: [
     CommonModule,
-    ButtonModule
+    ButtonModule,
+    MatDialogModule
     
   ],
   exports: [

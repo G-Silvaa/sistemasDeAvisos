@@ -8,6 +8,7 @@ import { ModalModule } from 'src/app/shared/modal/modal.module';
 
 
 
+
 @Component({
   selector: 'app-initial-page',
   templateUrl: './initial-page.component.html',

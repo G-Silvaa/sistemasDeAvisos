@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { CardsModule } from './shared/cards/cards/cards.module';
 
 
 
@@ -21,7 +22,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    CardsModule
     
   ],
   providers: [],

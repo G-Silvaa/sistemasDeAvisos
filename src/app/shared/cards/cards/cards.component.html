@@ -1,12 +1,12 @@
 
     <div class="cards">
         <div class="cards-content">
-            
-            <button (click)="openDialog()"></button>
-        <h3>Etapa Digital - 4CONF JUV</h3>
+            <div class="name">
+        <h3>{{ tituloInput }}</h3>
+        <img (click)="openDialog()" src="../../../../assets/pencil.svg" alt="">
+    </div>
         
-        <span>Participe da pesquisa IES Empreendedoras 2023 e contribua para tornar a instituição um polo de empreendedorismo jovem!
-            Para participar, acesse o formulário em: www.ifce.edu.br/pesquisa-eis-empreendedoras</span>
+        <span>{{ descricaoInput }}</span>
         </div>
         <footer> <h3>{{ cardTitle }}</h3> </footer>
     </div>
