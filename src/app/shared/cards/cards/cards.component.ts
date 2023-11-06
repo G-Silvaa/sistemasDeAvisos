@@ -12,8 +12,9 @@ export class CardsComponent {
   @Input() tituloInput:string = 'Adicione um Titulo';
   @Input() descricaoInput: string = 'Adicione uma descrição';
   
+  
   constructor(public dialog: MatDialog) {
-    console.log(this.descricaoInput)
+    
   }
 
 
@@ -22,7 +23,9 @@ export class CardsComponent {
       data: {
         title: this.cardTitle, 
         tituloInput: this.tituloInput, 
-        descricaoInput: this.descricaoInput 
+        descricaoInput: this.descricaoInput,
+        
+       
       }
     });
 

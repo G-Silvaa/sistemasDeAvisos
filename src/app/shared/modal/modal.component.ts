@@ -9,6 +9,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 export class ModalComponent {
   tituloInput: string;
   descricaoInput: string;
+  cardClass: string = '';
   @Output() dadosAtualizados = new EventEmitter<any>();
 
   constructor(public dialogRef: MatDialogRef<ModalComponent>,
@@ -17,7 +18,7 @@ export class ModalComponent {
     )
    {this.tituloInput = data.tituloInput;
     this.descricaoInput = data.descricaoInput
-    
+    this.cardClass = data.cardClass
   }
     
 textoArea: string = ''
@@ -41,6 +42,22 @@ salvar() {
   this.dialogRef.close(this.data);
 }
 
-}
 
+
+
+getCardClass(cardIndex: number): string {
+  switch(cardIndex) {
+    case 1:
+      return 'aviso1';
+    case 2:
+      return 'aviso2';
+    case 3:
+      return 'aviso3';
+    case 4:
+      return 'aviso4';
+    default:
+      return '';
+  }
+}
+}
 

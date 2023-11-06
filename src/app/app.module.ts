@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { CardsModule } from './shared/cards/cards/cards.module';
+import { CardsModalComponent } from './shared/cards-modal/cards-modal/cards-modal.component';
 
 
 
@@ -14,6 +15,7 @@ import { CardsModule } from './shared/cards/cards/cards.module';
 @NgModule({
   declarations: [
     AppComponent,
+    
     
     
     

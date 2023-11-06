@@ -6,6 +6,7 @@ import { ButtonModule } from '../button/button.module';
 import { CardsModule } from '../cards/cards/cards.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CardsModalModule } from '../cards-modal/cards-modal/cards-modal.module';
 
 
 
@@ -21,6 +22,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     MatDialogModule,
     ReactiveFormsModule,
+    CardsModalModule
+    
     
   ],
   exports: [
