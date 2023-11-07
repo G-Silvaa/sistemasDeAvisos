@@ -6,14 +6,15 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss']
 })
-export class ModalComponent {
+export class modalComponent {
   tituloInput: string;
   descricaoInput: string;
   cardClass: string = '';
-  @Output() dadosAtualizados = new EventEmitter<any>();
+  
 
-  constructor(public dialogRef: MatDialogRef<ModalComponent>,
+  constructor(public dialogRef: MatDialogRef<modalComponent>,
     @Inject(MAT_DIALOG_DATA) public data:any
+    
     
     )
    {this.tituloInput = data.tituloInput;
@@ -35,12 +36,15 @@ closeDialog() {
   this.dialogRef.close();
 }
 
+@Output() dadosAtualizados = new EventEmitter<any>()
+
 salvar() {
   this.data.tituloInput = this.tituloInput;
   this.data.descricaoInput = this.descricaoInput;
   this.dadosAtualizados.emit(this.data); 
   this.dialogRef.close(this.data);
 }
+
 
 
 

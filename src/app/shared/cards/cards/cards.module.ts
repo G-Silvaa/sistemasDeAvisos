@@ -7,13 +7,14 @@ import { CardsModalModule } from '../../cards-modal/cards-modal/cards-modal.modu
 
 
 
+
 @NgModule({
   declarations: [CardsComponent],
   imports: [
     CommonModule,
     ButtonModule,
     MatDialogModule,
-    CardsModalModule
+    CardsModalModule,
     
   ],
   exports: [

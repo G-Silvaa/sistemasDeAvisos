@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ModalComponent } from './modal.component';
+import { modalComponent } from './modal.component';
 import { ButtonComponent } from '../button/button.component';
 import { ButtonModule } from '../button/button.module';
 import { CardsModule } from '../cards/cards/cards.module';
@@ -13,7 +13,7 @@ import { CardsModalModule } from '../cards-modal/cards-modal/cards-modal.module'
 
 @NgModule({
   declarations: [
-    ModalComponent
+    modalComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +27,7 @@ import { CardsModalModule } from '../cards-modal/cards-modal/cards-modal.module'
     
   ],
   exports: [
-    ModalComponent
+    modalComponent
   ]
 })
 export class ModalModule { }

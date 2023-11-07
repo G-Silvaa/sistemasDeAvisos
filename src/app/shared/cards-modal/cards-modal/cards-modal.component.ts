@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 
 
@@ -8,6 +9,19 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cards-modal.component.scss']
 })
 export class CardsModalComponent {
-  @Input() backgroundColor!: string;
+  
+
+  @Input() cardTitle: string = '';
+  @Input() tituloInput:string = 'Adicione um Titulo';
+  @Input() descricaoInput: string = 'Adicione uma descrição';
+  
+  
+  
+  constructor(public dialog: MatDialog) {
+    
+  }
+
+
+ 
   
 }

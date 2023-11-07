@@ -1,6 +1,12 @@
 :root {
     /* PRIMARY */
     --primary-color: #2F9E41;
+    
+    --aviso1-background: #FF5733;
+    --aviso1-text-color: #FFFFFF;
+  
+    --aviso2-background: #3498DB;
+    --aviso2-text-color: #FFFFFF;
 
 }
 
@@ -13,3 +19,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
