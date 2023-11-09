@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.scss']
+  styleUrls: ['./modal.component.scss'],
 })
 export class modalComponent {
   tituloInput: string;
@@ -31,37 +31,13 @@ contacaracterer(event: any){
    
   }
 }
-  
+
 closeDialog() {
   this.dialogRef.close();
 }
-
+  
 @Output() dadosAtualizados = new EventEmitter<any>()
 
-salvar() {
-  this.data.tituloInput = this.tituloInput;
-  this.data.descricaoInput = this.descricaoInput;
-  this.dadosAtualizados.emit(this.data); 
-  this.dialogRef.close(this.data);
-}
 
-
-
-
-
-getCardClass(cardIndex: number): string {
-  switch(cardIndex) {
-    case 1:
-      return 'aviso1';
-    case 2:
-      return 'aviso2';
-    case 3:
-      return 'aviso3';
-    case 4:
-      return 'aviso4';
-    default:
-      return '';
-  }
-}
 }
 

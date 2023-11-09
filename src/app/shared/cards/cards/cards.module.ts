@@ -16,6 +16,7 @@ import { CardsModalModule } from '../../cards-modal/cards-modal/cards-modal.modu
     MatDialogModule,
     CardsModalModule,
     
+    
   ],
   exports: [
     CardsComponent
